@@ -1,5 +1,6 @@
 package com.example.ironthrone_learn;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -22,6 +23,7 @@ public class IronConfiguration {
     @Bean
     @ConditionalOnProduction
     @ConditionalOnProperty("raven.address")
+    @ConditionalOnMissingBean
     public RavenListener ravenListener(RavenProperties ravenProperties) {
         return new RavenListener(ravenProperties);
     }
