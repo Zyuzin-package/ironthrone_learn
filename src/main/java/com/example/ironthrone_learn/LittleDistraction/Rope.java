@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConditionalOnProperty(value = "execution.rope",havingValue ="false")
+@ConditionalOnProperty(value = "execution.rope",havingValue ="true")
 public class Rope {
     public Rope() {
         System.out.println("Create Rope");
