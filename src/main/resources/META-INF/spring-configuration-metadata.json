@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.ironthrone_learn.RavenProperties",
+      "name": "raven",
+      "type": "src.main.resources.iron"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.ironthrone_learn.RavenProperties",
+      "name": "raven.address",
+      "type": "java.util.List<java.lang.String>"
+    }
+  ]
+}
