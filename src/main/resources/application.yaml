@@ -4,3 +4,7 @@ jpa.hibernate.ddl-auto: validate
 raven:
   address: Samara, siZryan
   on: true
+execution:
+  rope: true
+  soap: true
+  on: true

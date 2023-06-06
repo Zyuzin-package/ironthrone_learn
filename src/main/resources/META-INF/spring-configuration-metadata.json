@@ -12,6 +12,16 @@
       "sourceType": "com.example.ironthrone_learn.RavenProperties",
       "name": "raven.address",
       "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.example.ironthrone_learn.LittleDistraction",
+      "name": "execution.rope",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.example.ironthrone_learn.LittleDistraction",
+      "name": "execution.soap",
+      "type": "java.util.List<java.lang.String>"
     }
   ]
 }
