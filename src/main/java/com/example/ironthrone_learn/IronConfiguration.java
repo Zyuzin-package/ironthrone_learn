@@ -16,14 +16,13 @@ public class IronConfiguration {
 
     @Bean
     @ConditionalOnProduction
+    @ConditionalOnRaven
     public IronListener ironListener() {
         return new IronListener();
     }
 
     @Bean
     @ConditionalOnProduction
-    @ConditionalOnProperty("raven.address")
-    @ConditionalOnMissingBean
     @ConditionalOnRaven
     public RavenListener ravenListener(RavenProperties ravenProperties) {
         return new RavenListener(ravenProperties);

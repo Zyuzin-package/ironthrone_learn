@@ -3,7 +3,7 @@ application.name: iron-throne
 jpa.hibernate.ddl-auto: validate
 raven:
   address: Samara, siZryan
-  on: true
+  enabled: false
 execution:
   rope: true
   soap: true

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 public class RavenListener implements ApplicationListener<ContextRefreshedEvent> {
     private final RavenProperties ravenProperties;
 
-    @Autowired
     public RavenListener(RavenProperties ravenProperties) {
         this.ravenProperties = ravenProperties;
     }
